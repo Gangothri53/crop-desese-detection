@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Crop Disease Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🌱 Crop Disease Detector</h1>
+        <p>Upload a leaf image to predict disease.</p>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required />
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
